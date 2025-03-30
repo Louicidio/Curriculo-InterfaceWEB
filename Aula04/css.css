@@ -1,22 +1,69 @@
 
-#nome{
+#Curriculo{
+    margin-top: 5px;
     text-align: center;
-    color: blue;
+    color: white;
     font-size: 60px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-style: dashed;
+    border-color: maroon;
+    background-color: black;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    width: 99%;
 }
 ul{
     font-size: 18px;
+    list-style-type:upper-latin;
+    list-style-position: inside;
+    padding-left: 5px;
 }
 p{
     font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block; 
+    
 }
 h2{
     text-decoration: underline;
     text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    border-style: dashed;
+    border-color: maroon;
+    border-width: 3px;
+    box-sizing: border-box;
 }
 .pessoal{
     font-size: 18px;
+    display: inline;
+    margin-right: 10%;
 }
-h1{
+hr{
+    border-color: maroon;
+    border-style: dashed;
+    border-width: 1px;
+}
+#Formação{
+    list-style-type:upper-roman;
+}
+/* mudanças na cor do link */
+a:link{
+    color: red;
+}
+a:visited{
+    color: grey;
+}
+a:active{
+    background-color: purple;
+}
+a:hover{
     background-color: black;
 }
