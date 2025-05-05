@@ -1,0 +1,104 @@
+/* titulo pricipal CURRICULO */
+#Curriculo {
+    margin-top: 5px;
+    text-align: center;
+    color: var(--mainTxt);
+    font-size: var(--Large);
+    text-transform: uppercase;
+    padding: 10px;
+    border-style: dashed;
+    border-color: var(--border);
+    background-color: var(--bg-mainTxt);
+}
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: calc(0.5vh + 0.5vw);
+}
+.viewport {
+    width: 98vw;
+    height: 100vh;
+    margin: auto;
+}
+/* listas ordenadas */
+ul {
+    font-size: var(--Small);
+    list-style-type: upper-latin;
+    list-style-position: inside;
+    padding-left: 5px;
+}
+/* paragrafos */
+p {
+    font-size: var(--Small);
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+/* titulos principais */
+h2 {
+    font-size: var(--Medium);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-mainTxt);
+    text-align: center;
+    color: var(--mainTxt);
+    padding: 2px;
+    border-style: dashed;
+    border-color: var(--border);
+    border-width: 3px;
+    box-sizing: border-box;
+}
+/* informações pessoais */
+.pessoal {
+    font-size: var(--Small);
+    display: inline;
+    margin-right: 10%;
+}
+/* listra para separação */
+hr {
+    border-color: var(--border);
+    border-style: dashed;
+    border-width: 1px;
+}
+/* lista de formação */
+#Formação {
+    list-style-type: upper-roman;
+}
+/* mudanças na cor do link */
+a:link {
+    color: var(--hover-link-color);
+}
+a:visited {
+    color: grey;
+}
+a:active {
+    background-color: purple;
+}
+a:hover {
+    background-color: var(--hover-link-bg);
+}
+/* variaveis globais */
+:root {
+    --Small: 1.8rem;
+    --Large: 6rem;
+    --Medium: 2.5rem;
+    --mainTxt: white; /* textos principais */
+    --border: maroon;
+    --bg-mainTxt: black;
+    --hover-link-bg: black; /* cor do bg ao passar o mouse*/
+    --hover-link-color: red; /* cor do link ao passar o mouse*/
+    --em: 1.8em; /* atualizado para 2em */
+}
+html {
+    font-size: 10px; /* definindo que 1 rem vale 10px */
+}
+.ch {
+    /* se baseia na largura do 0 */
+    font-size: 3ch;
+    margin-right: 15ch;
+}
+.em {
+    /* se baseia no tamanho do elemento pai*/
+    font-size: var(--em);
+    margin-right: 10em;
+}
