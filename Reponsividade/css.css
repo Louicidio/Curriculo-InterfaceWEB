@@ -6,13 +6,69 @@
     font-size: var(--Large);
     text-transform: uppercase;
     padding: 10px;
-    border-style: dashed;
+    border-style: solid;
     border-color: var(--border);
     background-color: var(--bg-mainTxt);
 }
+
+@media (max-width: 800px) {
+    .viewport {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em 0.5em;
+    }
+    .header .dados_pessoais {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .header .profile {
+        width: 20em;
+        height: 20em;
+        justify-content: center;
+    }
+    .profile{
+        margin-top: 6em;
+    }
+}
+@media (max-width: 600px) {
+    .viewport {
+        padding: 0.5em 0.2em;
+        gap: 1em;
+    }
+    #Curriculo, h2 {
+        font-size: 2.2rem;
+        padding: 0.5em;
+    }
+    .profile {
+        width: 8em;
+        height: 8em;
+    }
+    .header .dados_pessoais {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: flex-start;
+        margin-bottom: 1em;
+    }
+    .dados_pessoais .pessoal {
+        font-size: 2rem;
+        margin: 0.5em 0.5em 0 0;
+    }
+    
+    ul, p {
+        font-size: 1.2rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin: calc(0.5vh + 0.5vw);
+    background-color: #cdcdcd,;
 }
 .viewport {
     width: 98vw;
@@ -43,22 +99,10 @@ h2 {
     text-align: center;
     color: var(--mainTxt);
     padding: 2px;
-    border-style: dashed;
+    border-style: solid;
     border-color: var(--border);
     border-width: 3px;
     box-sizing: border-box;
-}
-/* informações pessoais */
-.pessoal {
-    font-size: var(--Small);
-    display: inline;
-    margin-right: 10%;
-}
-/* listra para separação */
-hr {
-    border-color: var(--border);
-    border-style: dashed;
-    border-width: 1px;
 }
 /* lista de formação */
 #Formação {
@@ -83,10 +127,10 @@ a:hover {
     --Large: 6rem;
     --Medium: 2.5rem;
     --mainTxt: white; /* textos principais */
-    --border: maroon;
+    --border: rgb(38, 36, 36);
     --bg-mainTxt: black;
     --hover-link-bg: black; /* cor do bg ao passar o mouse*/
-    --hover-link-color: red; /* cor do link ao passar o mouse*/
+    --hover-link-color: rgb(223, 180, 8); /* cor do link ao passar o mouse*/
     --em: 1.8em; /* atualizado para 2em */
 }
 html {
@@ -95,10 +139,33 @@ html {
 .ch {
     /* se baseia na largura do 0 */
     font-size: 3ch;
-    margin-right: 15ch;
 }
 .em {
     /* se baseia no tamanho do elemento pai*/
     font-size: var(--em);
-    margin-right: 10em;
+}
+.profile{
+    width: 15em;
+    height: 15em;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+}
+.dados_pessoais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5em;
+    margin-bottom: 2em;
+}
+.header{
+    display: flex;
+}
+/* informações pessoais */
+.pessoal {
+    font-size: var(--Medium);
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 0 0;
 }
